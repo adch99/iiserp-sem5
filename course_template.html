@@ -14,27 +14,27 @@
                 <div class="card-body">
                   <h5 class="card-title">Course Material and Info</h5>
                   <p>Some of the links require you to be signed in to your IISER Student Mail ID</p>
-                  {% if course["classroom"] %}
+                  {% if course["classroom"] != "" %}
 					  <a href="{{ course["classroom"] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-warning"><i class="fas fa-chalkboard"></i> Classroom</button>
 					  </a>
 				  {% endif %}
-                  {% if course["classroom"] %}
+                  {% if course["classroom"] != "" %}
 					  <a href="{{ course["courseGDrive"] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-primary"><i class="fab fa-google-drive"></i> Drive</button>
 					  </a>
 				  {% endif %}
-                  {% if course["classroom"] %}
+                  {% if course["classroom"] != ""%}
 					  <a href="{{ course["website"] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-info"><i class="fas fa-stream"></i> Website</button>
 					  </a>
 				  {% endif %}
-                  {% if course["classroom"] %}
+                  {% if course["classroom"] != "" %}
 					  <a href="https://mail.google.com/mail/u/1/#search/{{ course["gmailSearchTerm"] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-success text-white"><i class="fas fa-search"></i> Search in Mail</button>
 					  </a>
 				  {% endif %}
-                  {% if course["classroom"] %}
+                  {% if course["classroom"] != "" %}
 					  <a href="{{ course["booksGDrive"] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-danger"><i class="fas fa-book-open"></i> Books</button>
 					  </a>
