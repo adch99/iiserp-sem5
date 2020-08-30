@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="All the links for Sem 5 at one place">
-    <meta name="author" content="Purva Parmar">
+    <meta name="author" content="Purva Parmar, Aditya Chincholi">
 
     <title>Sem 5 | IISER Pune</title>
 
-    <link href="neon-glow.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="../css/neon-glow.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   </head>
   <body data-spy="scroll" data-target="#s4nav" data-offset="300" data-method="position" onload="loadFunction()">
@@ -42,7 +42,7 @@
           <ul class="nav nav-pills">
 		  {% for course in courses %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ course["id"] }}">{{ course["idname"] }}</a>
+              <a class="nav-link" href="{{ course['id'] }}">{{ course["idname"] }}</a>
             </li>
           {% endfor %}
 		  </ul>
@@ -98,8 +98,8 @@
           <div class="jumbotron jumbotron-fluid mb-0 text-center page-footer">
             <div class="container">
               <h5>Made with <a href="https://hackerthemes.com/bootstrap-themes/neon-glow/" target="_blank" rel="noopener noreferrer">Neon Glow</a></h5>
-              <p>Questions? Queries? Feedback? <a href="mailto:purva.parmar@students.iiserpune.ac.in">Send a Mail</a>.</p>
-              <h5><a href="https://www.github.com/TheReconPilot/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> TheReconPilot</a></h5>
+              <p>Questions? Queries? Feedback? <a href="mailto:purva.parmar@students.iiserpune.ac.in,aditya.chincholi@students.iiserpune.ac.in">Send a Mail</a>.</p>
+              <h5><a href="https://www.github.com/TheReconPilot/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> TheReconPilot</a> and <a href="https://www.github.com/adch99/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> adch99</a></h5>
               <br><br>
               <div class="hal-9000"></div>
             </div>

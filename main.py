@@ -3,10 +3,10 @@ from pandas import read_csv
 import os
 
 # Filenames
-courseTemplateFilename = "course_template.html"
-indexTemplateFilename = "index_template.html"
-dataFilename = "data.csv"
-instructorDataFilename = "instructors.csv"
+courseTemplateFilename = "templates/course_template.html"
+indexTemplateFilename = "templates/index_template.html"
+dataFilename = "data/data.csv"
+instructorDataFilename = "data/instructors.csv"
 # addResourcesFilename = "addresources.csv"
 indexFilename = "index.html"
 

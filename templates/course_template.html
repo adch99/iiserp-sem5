@@ -1,6 +1,6 @@
         <hr class="spacer" id={{ course["id"] }}>
 
-        <h1 class="display-2">{{ course["name"] }}</h1>
+        <h1 class="display-2">{{ course['idname'] }} - {{ course["name"] }}</h1>
 
         <div class="container">
           <div class="row align-items-center">
@@ -57,11 +57,11 @@
                     <button type="button" class="btn btn-primary"><i class="fas fa-user-circle"></i> Site</button>
                   </a>
   
-                  <a href="mailto:{{ instructor["email"] }}" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:{{ instructor['email'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-info"><i class="fas fa-paper-plane"></i> Mail</button>
                   </a>
   
-                  <a href="mailto:{{ course["email"] }}" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:{{ course['email'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-info"><i class="fas fa-envelope"></i> {{ course["idname"] }} Mail</button>
                   </a>
   
@@ -91,7 +91,7 @@
 				</thead>
 				<tbody>
 				  <tr>
-					<td><a href="{{ res["href"] }}" target="_blank" rel="noopener noreferrer">{{ res["title"] }}</a></td>
+					<td><a href="{{ res['href'] }}" target="_blank" rel="noopener noreferrer">{{ res["title"] }}</a></td>
 					<td>{{ res["desc"] }}</td>
 					<td>{{ res["suggestedBy"] }}</td>
 				  </tr>
