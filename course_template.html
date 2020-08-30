@@ -1,0 +1,92 @@
+        <hr class="spacer" id={{ course.id }}>
+
+        <h1 class="display-2">{{ course.name }}</h1>
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col">
+  
+              <div class="card my-2">
+                <div class="card-header"><i class="fas fa-book-reader"></i>
+                  Course Pages
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Course Material and Info</h5>
+                  <p>Some of the links require you to be signed in to your IISER Student Mail ID</p>
+                  <a href="{{ course.classroom }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-warning"><i class="fas fa-chalkboard"></i> Classroom</button>
+                  </a>
+                  <a href="{{ course.course_gdrive }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-primary"><i class="fab fa-google-drive"></i> Drive</button>
+                  </a>
+                  <a href="{{ course.website }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-info"><i class="fas fa-stream"></i> Website</button>
+                  </a>
+                  <a href="https://mail.google.com/mail/u/1/#search/{{ course.gmailsearchterm }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-success text-white"><i class="fas fa-search"></i> Search in Mail</button>
+                  </a>
+                  <a href="{{ course.books_gdrive }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-danger"><i class="fas fa-book-open"></i> Books</button>
+                  </a>
+                </div>
+              </div>
+  
+            </div>
+			{% for instructor in course.instructor %}
+            <div class="col">
+  
+              <div class="card my-2">
+                <div class="card-header"><i class="fas fa-address-card"></i>
+                  Instructor
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ instructor.name }}</h5>
+                  <p><i class="fas fa-envelope"></i> {{ instructor.email }} </p>
+                  <p><i class="fas fa-mobile-alt"></i> {{ instructor.phno }} </p>
+                  <a href="http://www.iiserpune.ac.in/people/faculty-details/{{ instructor.iiserid }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-primary"><i class="fas fa-user-circle"></i> Site</button>
+                  </a>
+  
+                  <a href="mailto:{{ instructor.email }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-info"><i class="fas fa-paper-plane"></i> Mail</button>
+                  </a>
+  
+                  <a href="mailto:{{ course.email }}" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-info"><i class="fas fa-envelope"></i> {{ course.idname }} Mail</button>
+                  </a>
+  
+                </div>
+              </div>
+  
+            </div>
+			{% endfor %}
+  
+            
+          </div>
+        </div>
+        
+		{% if course.addresource %}
+		{% for res in course.addresources %}
+        <hr class="spacer">
+        <h5><i class="fas fa-info-circle"></i> Additional Resources</h5>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Resource</th>
+                <th>Description</th>
+                <th>Suggested By</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="{{ res.href }}" target="_blank" rel="noopener noreferrer">{{ res.title }}</a></td>
+                <td>{{ res.desc }}</td>
+                <td>{{ res.suggestedby }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		{% endfor %}
+		{% endif %}
