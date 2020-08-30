@@ -17,16 +17,16 @@
                   <a href="{{ course.classroom }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-warning"><i class="fas fa-chalkboard"></i> Classroom</button>
                   </a>
-                  <a href="{{ course.course_gdrive }}" target="_blank" rel="noopener noreferrer">
+                  <a href="{{ course.courseGDrive }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-primary"><i class="fab fa-google-drive"></i> Drive</button>
                   </a>
                   <a href="{{ course.website }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-info"><i class="fas fa-stream"></i> Website</button>
                   </a>
-                  <a href="https://mail.google.com/mail/u/1/#search/{{ course.gmailsearchterm }}" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mail.google.com/mail/u/1/#search/{{ course.gmailSearchTerm }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-success text-white"><i class="fas fa-search"></i> Search in Mail</button>
                   </a>
-                  <a href="{{ course.books_gdrive }}" target="_blank" rel="noopener noreferrer">
+                  <a href="{{ course.booksGDrive }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-danger"><i class="fas fa-book-open"></i> Books</button>
                   </a>
                 </div>
@@ -66,8 +66,8 @@
           </div>
         </div>
         
-		{% if course.addresource %}
-		{% for res in course.addresources %}
+		{% if course.addResource %}
+		{% for res in course.addResources %}
         <hr class="spacer">
         <h5><i class="fas fa-info-circle"></i> Additional Resources</h5>
         <div class="table-responsive">
@@ -83,7 +83,7 @@
               <tr>
                 <td><a href="{{ res.href }}" target="_blank" rel="noopener noreferrer">{{ res.title }}</a></td>
                 <td>{{ res.desc }}</td>
-                <td>{{ res.suggestedby }}</td>
+                <td>{{ res.suggestedBy }}</td>
               </tr>
             </tbody>
           </table>

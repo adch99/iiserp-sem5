@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="All the links for Sem 5 at one place">
+    <meta name="author" content="Purva Parmar">
+
+    <title>Sem 5 | IISER Pune</title>
+
+    <link href="neon-glow.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  </head>
+  <body data-spy="scroll" data-target="#s4nav" data-offset="300" data-method="position" onload="loadFunction()">
+
+    <div id="spinner">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+
+
+    <div id="entireBody" style="display:none;" class="text-center">
+
+      <nav id="s4nav" class="navbar fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Sem 5</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="nav nav-pills">
+		  {% for course in courses %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ course.id }}">{{ course.idname }}</a>
+            </li>
+          {% endfor %}
+		  </ul>
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Sem 5 | IISER Pune | 2020</h1>
+          <p class="lead">A single page to house the myriad of links that we have to search through</p>
+
+          <hr class="my-4">
+
+          <div class="row align-items-center">
+            <div class="col">
+              <p>The All Books Google Drive Link</p>
+              <a class="btn btn-primary btn-lg" href="https://drive.google.com/drive/u/1/folders/1qSMQU_HyZtcfk8IlYhPT4nLZYzijRJ3b" role="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i> Books</a>
+            </div>
+            <div class="col">
+              <p>The Question Papers Drive Link (Maintained by <a href="mailto:gv.anuraag@students.iiserpune.ac.in" target="_blank" rel="noopener noreferrer">Anuraag</a>)</p>
+              <a class="btn btn-primary btn-lg" href="https://drive.google.com/drive/u/1/folders/1OfxAhS5nNKtGSO-XTy_6gUlu_E1dMCOE" role="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-pen-alt"></i> Question Papers</a>
+            </div>
+          </div>
+          <hr class="spacer">
+          <p class="font-weight-lighter">Both the above links require you to use your IISER Student Email ID</p>
+        </div>
+      </div>
+
+
+      <h3>Mail Index</h3>
+      <p>Choose your mail index. [Only useful if you are on Desktop]</p>
+      <p><a href="mail-index-help.html">Read this page for help and info.</a></p>
+      <p class="font-weight-lighter">The Classroom, Drive and Search Mail links depend on the mail index.</p>
+
+        <div class="btn-group" role="group" aria-label="Mail Index Button Group">
+          <button type="button" class="btn btn-primary" id="mailIndex0">0</button>
+          <button type="button" class="btn btn-primary active" id="mailIndex1">1</button>
+          <button type="button" class="btn btn-primary" id="mailIndex2">2</button>
+          <button type="button" class="btn btn-primary" id="mailIndex3">3</button>
+          <button type="button" class="btn btn-primary" id="mailIndex4">4</button>
+          <button type="button" class="btn btn-primary" id="mailIndex5">5</button>
+        </div>
+        
+        <h5 class="my-2">Current Mail Index = <span id="currentMI">1</span></h5>
+
+        {% autoescape false %}
+		{% for course in courses %}
+		{{ course.coursehtml }}
+		{% endautoescape %}
+		
+        <footer>
+          <div class="jumbotron jumbotron-fluid mb-0 text-center page-footer">
+            <div class="container">
+              <h5>Made with <a href="https://hackerthemes.com/bootstrap-themes/neon-glow/" target="_blank" rel="noopener noreferrer">Neon Glow</a></h5>
+              <p>Questions? Queries? Feedback? <a href="mailto:purva.parmar@students.iiserpune.ac.in">Send a Mail</a>.</p>
+              <h5><a href="https://www.github.com/TheReconPilot/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> TheReconPilot</a></h5>
+              <br><br>
+              <div class="hal-9000"></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+
+
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;sameSite=strict";
+      }
+      
+      function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function checkCookie() {
+        var mi = getCookie("mailIndex");
+        if (mi != "") {
+          changeIndex(mi);
+        }
+      }
+
+      function changeIndex(newIndex) {
+        let re = new RegExp(newIndex);
+        $("body").html($("body").html().replace(/\/\d+\//g, re));
+
+        currentIndex = $("#currentMI").html();
+        $("#mailIndex" + currentIndex).toggleClass("active");
+        $("#mailIndex" + newIndex).toggleClass("active");
+        $("#currentMI").html(newIndex);
+        setCookie("mailIndex", newIndex, 30);
+      }
+
+      function loadFunction() {
+          let timeout = setTimeout(showPage, 1000);
+      }
+
+      function showPage() {
+          let actualBody = document.querySelector("#entireBody");
+
+          document.querySelector("#spinner").style.display = "none";
+          actualBody.style.display = "block";
+          checkCookie();
+      }
+
+
+      $("[id^=mailIndex]").click(function() {
+          let index = $(this).html();
+          changeIndex(index);
+      });
+    </script>
+
+  </body>
+</html>
