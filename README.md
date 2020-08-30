@@ -2,6 +2,8 @@
 
 A Links page for Semester 5 of IISER Pune in the 'Blessed' Year of 2020
 
+Find the page here: [Link](https://adch99.github.io/iiserp-sem5)
+
 ## Contributing
 
 We need contributors for maintaining the data for courses and instructors. 
