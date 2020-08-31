@@ -5,11 +5,11 @@ import os
 
 # Filenames
 courseTemplateFilename = "templates/course_template.html"
-indexTemplateFilename = "templates/index_template.html"
+deptTemplateFilename = "templates/dept_template.html"
 dataFilename = "data/phy_courses.csv"
 instructorDataFilename = "data/phy_instructors.csv"
 # addResourcesFilename = "addresources.csv"
-indexFilename = "phy.html"
+deptFilename = "html/phy.html"
 
 # Import data
 
@@ -33,7 +33,7 @@ for course in courses:
 # Jinja Setup
 env = Environment(loader=FileSystemLoader(os.path.abspath(".")), autoescape=select_autoescape(["html"]))
 courseTemplate = env.get_template(courseTemplateFilename)
-indexTemplate = env.get_template(indexTemplateFilename)
+deptTemplate = env.get_template(deptTemplateFilename)
 
 # Start working
 for course in courses:
@@ -42,9 +42,9 @@ for course in courses:
     course["coursehtml"] = courseTemplate.render(course=course)
     # print("courseinfo:", course["courseinfo"])
 
-output = indexTemplate.render(courses=courses)
+output = deptTemplate.render(courses=courses)
 
-with open(indexFilename, "w") as outfile:
+with open(deptFilename, "w") as outfile:
     outfile.write(output)
 
 print("Tasked Completed Successfully!")
