@@ -16,10 +16,10 @@ courses = courses.to_dict("records")
 instData = read_csv(instructorDataFilename, delimiter=",", header=0)
 instData = instData.to_dict("records")
 
-print("courses:", courses)
-print()
-print("instData:", instData)
-print()
+# print("courses:", courses)
+# print()
+# print("instData:", instData)
+# print()
 # Merge the datasets
 for course in courses:
     instructors = []
@@ -35,8 +35,8 @@ indexTemplate = env.get_template(indexTemplateFilename)
 
 # Start working
 for course in courses:
-    print("course:", course)
-    print()
+    # print("course:", course)
+    # print()
     course["coursehtml"] = courseTemplate.render(course=course)
     # print("courseinfo:", course["courseinfo"])
 
