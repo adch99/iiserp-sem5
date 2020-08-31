@@ -34,19 +34,18 @@
     <div id="entireBody" style="display:none;" class="text-center">
 
     
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="text-center">
-        <a class="navbar-brand ml-3" href="#">
-          <span class="">Sem 5</span>
-        </a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="home-link">
+        <a class="navbar-brand ml-3" href="../index.html">Sem 5</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
       </div>
     
-      <div class="collapse navbar-collapse flex-column " id="navbarContent">
+      <div class="collapse navbar-collapse flex-column" id="navbarContent">
     
-        <ul class="navbar-nav w-100 justify-content-center px-3 mx-3">
+        <ul class="navbar-nav justify-content-center px-3 mx-3">
           <li class="nav-item">
             <a class="nav-link" href="./mth.html">MTH</a>
           </li>
@@ -66,8 +65,8 @@
             <a class="nav-link" href="./hss.html">HSS</a>
           </li> 
         </ul>
-        <br>
-        <ul class="navbar-nav nav-pills justify-content-center w-100 px-3 mx-3" id="s4nav">
+  
+        <ul class="navbar-nav nav-pills justify-content-center px-3 mx-3" id="s4nav">
           {% for course in courses %}
               <li class="nav-item">
                 <a class="nav-link" href="#{{ course['id'] }}">{{ course["idname"] }}</a>

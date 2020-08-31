@@ -6,6 +6,29 @@ nav, .page-footer {
     background: #0c0d16;
 }
 
+#s4nav {
+  border-top: 1px dotted lime;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-link {
+    width: 100%;
+  }
+
+  #s4nav {
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 1px solid lime;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .home-link {
+    position: absolute;
+  }
+}
+
 .navbar-toggler-icon {
     color: lime;
 }
