@@ -6,10 +6,10 @@ import os
 # Filenames
 courseTemplateFilename = "templates/course_template.html"
 deptTemplateFilename = "templates/dept_template.html"
-dataFilename = "data/mth_courses.csv"
-instructorDataFilename = "data/mth_instructors.csv"
+dataFilename = "data/hss_courses.csv"
+instructorDataFilename = "data/hss_instructors.csv"
 # addResourcesFilename = "addresources.csv"
-deptFilename = "html/mth.html"
+deptFilename = "html/hss.html"
 
 # Import data
 
