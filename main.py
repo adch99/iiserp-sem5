@@ -1,19 +1,22 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pandas import read_csv
+import numpy as np
 import os
 
 # Filenames
 courseTemplateFilename = "templates/course_template.html"
 indexTemplateFilename = "templates/index_template.html"
-dataFilename = "data/data.csv"
-instructorDataFilename = "data/instructors.csv"
+dataFilename = "data/phy_courses.csv"
+instructorDataFilename = "data/phy_instructors.csv"
 # addResourcesFilename = "addresources.csv"
 indexFilename = "index.html"
 
 # Import data
 courses = read_csv(dataFilename, delimiter=",", header=0)
+courses = courses.replace(np.nan, "", regex=True)
 courses = courses.to_dict("records")
 instData = read_csv(instructorDataFilename, delimiter=",", header=0)
+instData = instData.replace(np.nan, "", regex=True)
 instData = instData.to_dict("records")
 
 # print("courses:", courses)
