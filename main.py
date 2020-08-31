@@ -3,14 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 
-# Filenames
-courseTemplateFilename = "templates/course_template.html"
-deptTemplateFilename = "templates/dept_template.html"
-dataFilename = "data/hss_courses.csv"
-instructorDataFilename = "data/hss_instructors.csv"
-# addResourcesFilename = "addresources.csv"
-deptFilename = "html/hss.html"
-
 # Import data
 
 def preprocessing(csv_file):
@@ -19,32 +11,45 @@ def preprocessing(csv_file):
     df = df.to_dict('records')  #creates a dictionary
     return df
 
-courses = preprocessing(dataFilename)
-instData = preprocessing(instructorDataFilename)
+# Chemistry to be added when available
+deptlist = ['mth', 'phy', 'bio', 'ecs', 'hss']
 
-# Merge the datasets
-for course in courses:
-    instructors = []
-    for prof in instData:
-        if prof["courseid"] == course["id"]:
-            instructors.append(prof)
-    course["instructors"] = instructors
+for dept in deptlist:
 
-# Jinja Setup
-env = Environment(loader=FileSystemLoader(os.path.abspath(".")), autoescape=select_autoescape(["html"]))
-courseTemplate = env.get_template(courseTemplateFilename)
-deptTemplate = env.get_template(deptTemplateFilename)
+    # Filenames
+    courseTemplateFilename = "templates/course_template.html"
+    deptTemplateFilename = "templates/dept_template.html"
+    dataFilename = f"data/{dept}_courses.csv"
+    instructorDataFilename = f"data/{dept}_instructors.csv"
+    # addResourcesFilename = "addresources.csv"
+    deptFilename = f"html/{dept}.html"
 
-# Start working
-for course in courses:
-    # print("course:", course)
-    # print()
-    course["coursehtml"] = courseTemplate.render(course=course)
-    # print("courseinfo:", course["courseinfo"])
+    courses = preprocessing(dataFilename)
+    instData = preprocessing(instructorDataFilename)
 
-output = deptTemplate.render(courses=courses)
+    # Merge the datasets
+    for course in courses:
+        instructors = []
+        for prof in instData:
+            if prof["courseid"] == course["id"]:
+                instructors.append(prof)
+        course["instructors"] = instructors
 
-with open(deptFilename, "w") as outfile:
-    outfile.write(output)
+    # Jinja Setup
+    env = Environment(loader=FileSystemLoader(os.path.abspath(".")), autoescape=select_autoescape(["html"]))
+    courseTemplate = env.get_template(courseTemplateFilename)
+    deptTemplate = env.get_template(deptTemplateFilename)
 
-print("Tasked Completed Successfully!")
+    # Start working
+    for course in courses:
+        # print("course:", course)
+        # print()
+        course["coursehtml"] = courseTemplate.render(course=course)
+        # print("courseinfo:", course["courseinfo"])
+
+    output = deptTemplate.render(courses=courses)
+
+    with open(deptFilename, "w") as outfile:
+        outfile.write(output)
+
+    print(f"Task Completed: {dept}.html")
