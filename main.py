@@ -20,7 +20,7 @@ def preprocessing(csv_file):
     return df
 
 courses = preprocessing(dataFilename)
-instData = preprocessing(dataFilename)
+instData = preprocessing(instructorDataFilename)
 
 # Merge the datasets
 for course in courses:
