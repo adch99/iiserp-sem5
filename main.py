@@ -9,7 +9,7 @@ indexTemplateFilename = "templates/index_template.html"
 dataFilename = "data/phy_courses.csv"
 instructorDataFilename = "data/phy_instructors.csv"
 # addResourcesFilename = "addresources.csv"
-indexFilename = "index.html"
+indexFilename = "phy.html"
 
 # Import data
 
