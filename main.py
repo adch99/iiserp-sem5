@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from pandas import read_csv
+import pandas as pd
 import numpy as np
 import os
 
@@ -12,17 +12,16 @@ instructorDataFilename = "data/phy_instructors.csv"
 indexFilename = "index.html"
 
 # Import data
-courses = read_csv(dataFilename, delimiter=",", header=0)
-courses = courses.replace(np.nan, "", regex=True)
-courses = courses.to_dict("records")
-instData = read_csv(instructorDataFilename, delimiter=",", header=0)
-instData = instData.replace(np.nan, "", regex=True)
-instData = instData.to_dict("records")
 
-# print("courses:", courses)
-# print()
-# print("instData:", instData)
-# print()
+def preprocessing(csv_file):
+    df = pd.read_csv(csv_file, delimiter=",", header=0)  #reads the .csv file and uses 1st row as header
+    df.replace(np.nan, "", regex=True, inplace=True) # replace all null values with blank
+    df = df.to_dict('records')  #creates a dictionary
+    return df
+
+courses = preprocessing(dataFilename)
+instData = preprocessing(dataFilename)
+
 # Merge the datasets
 for course in courses:
     instructors = []
