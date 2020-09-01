@@ -19,9 +19,6 @@ nav, .page-footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .home-link {
-    width: 100%;
-  }
 
   #s4nav {
     margin-top: 10px;
@@ -30,18 +27,16 @@ nav, .page-footer {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .home-link {
-    position: absolute;
-  }
-}
-
 .navbar-toggler-icon {
     color: lime;
 }
 
+.home-link {
+  margin: 0 1rem 0 auto;
+}
+
 #entireBody {
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 a {
