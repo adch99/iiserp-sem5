@@ -12,7 +12,7 @@ def preprocessing(csv_file):
     return df
 
 # Chemistry to be added when available
-deptlist = ['mth', 'phy', 'bio', 'ecs', 'hss']
+deptlist = ['mth', 'phy', 'bio', 'ecs', 'hss', 'chm']
 
 for dept in deptlist:
 
