@@ -8932,9 +8932,11 @@ a.text-dark:hover, a.text-dark:focus {
 .text-mono {
   font-family: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+/*
+Commented out by adch99
 .btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
   color: #c1f8c2; }
-
+*/
 .vim-caret {
   -webkit-animation: vimCaret 1s linear infinite;
        -o-animation: vimCaret 1s linear infinite;
