@@ -11,7 +11,7 @@ def preprocessing(csv_file):
     df = df.to_dict('records')  #creates a dictionary
     return df
 
-# Chemistry to be added when available
+# List of departments
 deptlist = ['mth', 'phy', 'bio', 'ecs', 'hss', 'chm']
 
 for dept in deptlist:
