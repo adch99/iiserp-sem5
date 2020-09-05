@@ -47,7 +47,7 @@ for dept in deptlist:
         course["coursehtml"] = courseTemplate.render(course=course)
         # print("courseinfo:", course["courseinfo"])
 
-    output = deptTemplate.render(courses=courses)
+    output = deptTemplate.render(courses=courses, dept=dept.upper())
 
     with open(deptFilename, "w") as outfile:
         outfile.write(output)

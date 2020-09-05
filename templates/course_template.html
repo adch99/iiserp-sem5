@@ -34,8 +34,8 @@
 						<button type="button" class="btn btn-success text-white"><i class="fas fa-search"></i> Search in Mail</button>
 					  </a>
 				  {% endif %}
-                  {% if course['booksGDrive'] != '' %}
-					  <a href="{{ course['booksGDrive'] }}" target="_blank" rel="noopener noreferrer">
+                  {% if course['studentGDrive'] != '' %}
+					  <a href="{{ course['studentGDrive'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-danger"><i class="fas fa-book-open"></i> Books</button>
 					  </a>
 				  {% endif %}
@@ -52,10 +52,15 @@
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">{{ instructor['name'] }}</h5>
+				  {% if instructor['email'] != '' %}
                   <p><i class="fas fa-envelope"></i> {{ instructor['email'] }} </p>
-                  <a href="http://www.iiserpune.ac.in/people/faculty-details/{{ instructor['iiserid'] }}" target="_blank" rel="noopener noreferrer">
+                  {% endif %}
+				  
+				  {% if instructor['website'] != "" %}
+				  <a href="{{ instructor['website'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-primary"><i class="fas fa-user-circle"></i> Site</button>
                   </a>
+				  {% endif %}
 				  
 				  {% if instructor['email'] != '' %}
                   <a href="mailto:{{ instructor['email'] }}" target="_blank" rel="noopener noreferrer">

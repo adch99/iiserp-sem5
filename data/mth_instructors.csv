@@ -1,7 +1,7 @@
-iiserid,name,courseid,email
-137,Amit Hogadi,mth312,amit@iiserpune.ac.in
-189,Mainak Poddar,mth311,mainak@iiserpune.ac.in
-146,Chandrasheel Bhagwat,mth314,cbhagwat@iiserpune.ac.in
-169,Manish Mishra,mth310,manish@iiserpune.ac.in
-35,Ayan Mahalanobis,mth318,ayanm@iiserpune.ac.in
-1000,Pallavi Manohar,mth447,pallavi@acads.iiserpune.ac.in
+iiserid,name,courseid,email,website
+35,Ayan Mahalanobis,mth318,ayanm@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/35
+137,Amit Hogadi,mth312,amit@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/137
+146,Chandrasheel Bhagwat,mth314,cbhagwat@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/146
+169,Manish Mishra,mth310,manish@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/169
+189,Mainak Poddar,mth311,mainak@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/189
+1000,Pallavi Manohar,mth447,pallavi@acads.iiserpune.ac.in,

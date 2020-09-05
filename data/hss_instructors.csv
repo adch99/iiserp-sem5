@@ -1,5 +1,5 @@
-iiserid,name,courseid,email
-196,Bejoy K. Thomas,hss364,bejoy@iiserpune.ac.in
-198,Chaitra Redkar,hss366,chaitra@iiserpune.ac.in
-201,Shalini Sharma,hss365,shalini@iiserpune.ac.in
-1003,Anil Zankar,hss351,anil.zankar@iiserpune.ac.in
+iiserid,name,courseid,email,website
+196,Bejoy K. Thomas,hss364,bejoy@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/196
+198,Chaitra Redkar,hss366,chaitra@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/198
+201,Shalini Sharma,hss365,shalini@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/201
+1003,Anil Zankar,hss351,anil.zankar@iiserpune.ac.in,

@@ -1,9 +1,9 @@
-iiserid,name,courseid,email
-146,Chandrasheel Bhagwat,mth202,cbhagwat@iiserpune.ac.in
-27,H N Gopi,chm311,hn.gopi@iiserpune.ac.in
-142,Moumita Majumdar,chm312,moumitam@iiserpune.ac.in
-111,Jeetender Chugh,chm320,cjeet@iiserpune.ac.in
-128,S Sandanaraj Britto,chm332,sandanaraj.britto@iiserpune.ac.in
-58,Pinaki Talukdar,chm331,ptalukdar@iiserpune.ac.in
-41,Arnab Mukherjee,chm334,arnab.mukherjee@iiserpune.ac.in
-55,S.G.Srivatsan,chm351,srivatsan@iiserpune.ac.in
+iiserid,name,courseid,email,website
+27,H N Gopi,chm311,hn.gopi@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/27
+41,Arnab Mukherjee,chm334,arnab.mukherjee@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/41
+55,S.G.Srivatsan,chm351,srivatsan@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/55
+58,Pinaki Talukdar,chm331,ptalukdar@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/58
+111,Jeetender Chugh,chm320,cjeet@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/111
+128,S Sandanaraj Britto,chm332,sandanaraj.britto@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/128
+142,Moumita Majumdar,chm312,moumitam@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/142
+146,Chandrasheel Bhagwat,mth202,cbhagwat@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/146
