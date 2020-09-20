@@ -1,8 +1,8 @@
 id,name,idname,classroom,courseGDrive,courseDropbox,website,gmailSearchTerm,studentGDrive,email
-ecs312,Physics of Atmosphere and Ocean,ECS 312,,,,,(ECS+312)+OR+(ECS312),https://drive.google.com/drive/u/1/folders/13LQkd6qbYhPeP39z5c6L4HFv7NZstPJy?usp=sharing,ecs312@students.iiserpune.ac.in
-ecs323,Applied Math Methods,ECS 323,,,,,(ECS+323)+OR+(ECS323),,ecs323@students.iiserpune.ac.in
+ecs312,Physics of Atmosphere and Ocean,ECS 312,https://classroom.google.com/u/1/c/MTQzODUwMjc0MjE3,,,,(ECS+312)+OR+(ECS312),https://drive.google.com/drive/u/1/folders/13LQkd6qbYhPeP39z5c6L4HFv7NZstPJy?usp=sharing,ecs312@students.iiserpune.ac.in
+ecs323,Applied Math Methods,ECS 323,https://classroom.google.com/u/1/c/MTMwOTIyMDgwNjU5,,,https://joymonteiro.github.io/ecs323.html,(ECS+323)+OR+(ECS323),,ecs323@students.iiserpune.ac.in
 ecs324,Introduction to Geophysics,ECS 324,,,,,(ECS+324)+OR+(ECS324),,ecs324@students.iiserpune.ac.in
-ecs333,Sedimentology and Stratigraphy,ECS 333,,,,,(ECS+333)+OR+(ECS333),https://drive.google.com/drive/u/1/folders/1grJoXLiakbeU5rLdqX0805l8mwsEsDuv?usp=sharing,ecs333@students.iiserpune.ac.in
-ecs334,Hydrology,ECS 334,,,,,(ECS+334)+OR+(ECS334),https://drive.google.com/drive/u/1/folders/1iPq06AgzIi09rDfzipzZyhO6O-56dxXq?usp=sharing,ecs334@students.iiserpune.ac.in
-ecs336,Earth & Planetary Materials,ECS 336,,,,,(ECS+336)+OR+(ECS336),,ecs336@students.iiserpune.ac.in
-ecs458,Structural Geology and Tectonics,ECS 458,,,,,(ECS+458)+OR+(ECS458),,ecs458@students.iiserpune.ac.in
+ecs333,Sedimentology and Stratigraphy,ECS 333,https://classroom.google.com/u/1/c/MTUzMjY4NTMxNDM5,,,,(ECS+333)+OR+(ECS333),https://drive.google.com/drive/u/1/folders/1grJoXLiakbeU5rLdqX0805l8mwsEsDuv?usp=sharing,ecs333@students.iiserpune.ac.in
+ecs334,Hydrology,ECS 334,https://classroom.google.com/u/1/c/MTMwOTczMDk3OTUx,,,,(ECS+334)+OR+(ECS334),https://drive.google.com/drive/u/1/folders/1iPq06AgzIi09rDfzipzZyhO6O-56dxXq?usp=sharing,ecs334@students.iiserpune.ac.in
+ecs336,Earth & Planetary Materials,ECS 336,https://classroom.google.com/u/1/c/MTUzNzAzNDU2ODAy,,,,(ECS+336)+OR+(ECS336),,ecs336@students.iiserpune.ac.in
+ecs458,Structural Geology and Tectonics,ECS 458,https://classroom.google.com/u/1/c/MTUxNjIzMTcwMTA5,,,,(ECS+458)+OR+(ECS458),,ecs458@students.iiserpune.ac.in
