@@ -1,8 +1,8 @@
-id,name,idname,classroom,courseGDrive,courseDropbox,website,gmailSearchTerm,studentGDrive,email
-chm311,Physical Organic Chemistry,CHM 311,https://classroom.google.com/u/1/c/MTM4OTExMTE1NjU1,,,,(CHM+311)+OR+(CHM311),https://drive.google.com/drive/u/1/folders/1O2lsCWINQ2x16wqrSyZmZfrxQaZY0Q3v?usp=sharing,chm311@students.iiserpune.ac.in
-chm312,Main Group Chemistry,CHM 312,https://classroom.google.com/u/1/c/MTUzNzA5MTU2MzA4,,,,(CHM+312)+OR+(CHM312),,chm312@students.iiserpune.ac.in
-chm320,Symmetry and Group Theory,CHM 320,https://classroom.google.com/u/1/c/MTUxNzA5OTMzMDcy,,,,(CHM+320)+OR+(CHM320),,chm320@students.iiserpune.ac.in
-chm331,Self-Assembly in Chemistry,CHM 331,https://classroom.google.com/u/1/c/MTQzODI5NjIzMjEx,https://drive.google.com/drive/folders/1jBehGSvzYef11soGQsnQwJAd6SUYUaBJ?usp=sharing,,,(CHM+331)+OR+(CHM331),,chm331@students.iiserpune.ac.in
-chm332,Separation Principles and Techniques,CHM 332,https://classroom.google.com/u/1/c/MTUzMjg4MzYzOTA1,,,,(CHM+332)+OR+(CHM332,https://drive.google.com/drive/u/1/folders/17vaEeNP2zFZEnfIGJ3rNQZ3WQ8Psx2eV?usp=sharing,chm332@students.iiserpune.ac.in
-chm334,Physical Chemistry of Solutions,CHM 334,https://classroom.google.com/u/1/c/MTMxMjc1NTE3MzQz,,,,(CHM+334)+OR+(CHM334),,chm334@students.iiserpune.ac.in
-chm351,Biorganic Chemistry,CHM 351,https://classroom.google.com/u/1/c/MTUyNjE0MDI5MzUw,,,,(CHM+351)+OR+(CHM351),,chm351@students.iiserpune.ac.in
+,id,name,idname,classroom,meetpermalink,courseGDrive,courseDropbox,website,gmailSearchTerm,studentGDrive,email
+0,chm311,Physical Organic Chemistry,CHM 311,https://classroom.google.com/u/1/c/MTM4OTExMTE1NjU1,,,,,(CHM+311)+OR+(CHM311),https://drive.google.com/drive/u/1/folders/1O2lsCWINQ2x16wqrSyZmZfrxQaZY0Q3v?usp=sharing,chm311@students.iiserpune.ac.in
+1,chm312,Main Group Chemistry,CHM 312,https://classroom.google.com/u/1/c/MTUzNzA5MTU2MzA4,,,,,(CHM+312)+OR+(CHM312),,chm312@students.iiserpune.ac.in
+2,chm320,Symmetry and Group Theory,CHM 320,https://classroom.google.com/u/1/c/MTUxNzA5OTMzMDcy,,,,,(CHM+320)+OR+(CHM320),,chm320@students.iiserpune.ac.in
+3,chm331,Self-Assembly in Chemistry,CHM 331,https://classroom.google.com/u/1/c/MTQzODI5NjIzMjEx,,https://drive.google.com/drive/folders/1jBehGSvzYef11soGQsnQwJAd6SUYUaBJ?usp=sharing,,,(CHM+331)+OR+(CHM331),,chm331@students.iiserpune.ac.in
+4,chm332,Separation Principles and Techniques,CHM 332,https://classroom.google.com/u/1/c/MTUzMjg4MzYzOTA1,,,,,(CHM+332)+OR+(CHM332,https://drive.google.com/drive/u/1/folders/17vaEeNP2zFZEnfIGJ3rNQZ3WQ8Psx2eV?usp=sharing,chm332@students.iiserpune.ac.in
+5,chm334,Physical Chemistry of Solutions,CHM 334,https://classroom.google.com/u/1/c/MTMxMjc1NTE3MzQz,,,,,(CHM+334)+OR+(CHM334),,chm334@students.iiserpune.ac.in
+6,chm351,Biorganic Chemistry,CHM 351,https://classroom.google.com/u/1/c/MTUyNjE0MDI5MzUw,,,,,(CHM+351)+OR+(CHM351),,chm351@students.iiserpune.ac.in

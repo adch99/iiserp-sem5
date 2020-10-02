@@ -6,7 +6,7 @@
           <div class="row align-items-center">
 
             <div class="col">
-  
+
               <div class="card my-2">
                 <div class="card-header"><i class="fas fa-book-reader"></i>
                   Course Pages
@@ -14,43 +14,48 @@
                 <div class="card-body">
                   <h5 class="card-title">Course Material and Info</h5>
                   <p>Some of the links require you to be signed in to your IISER Student Mail ID</p>
-                  {% if course['classroom'] != '' %}
+          {% if course['classroom'] != '' %}
 					  <a href="{{ course['classroom'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-warning"><i class="fas fa-chalkboard"></i> Classroom</button>
 					  </a>
 				  {% endif %}
-                  {% if course['courseGDrive'] != '' %}
+          {% if course['meetpermalink'] != '' %}
+            <a href="{{ course['meetpermalink'] }}" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info"><i class="fas fa-video"></i> Google Meet</button>
+            </a>
+          {% endif %}
+          {% if course['courseGDrive'] != '' %}
 					  <a href="{{ course['courseGDrive'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-primary"><i class="fab fa-google-drive"></i> Drive</button>
 					  </a>
 				  {% endif %}
-                  {% if course['courseDropbox'] != '' %}
+          {% if course['courseDropbox'] != '' %}
 					  <a href="{{ course['courseDropbox'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-primary"><i class="fab fa-dropbox"></i> Dropbox</button>
 					  </a>
 				  {% endif %}
-                  {% if course['website'] != '' %}
+          {% if course['website'] != '' %}
 					  <a href="{{ course['website'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-info"><i class="fas fa-stream"></i> Website</button>
 					  </a>
 				  {% endif %}
-                  {% if course['gmailSearchTerm'] != '' %}
+          {% if course['gmailSearchTerm'] != '' %}
 					  <a href="https://mail.google.com/mail/u/1/#search/{{ course['gmailSearchTerm'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-success text-white"><i class="fas fa-search"></i> Search in Mail</button>
 					  </a>
 				  {% endif %}
-                  {% if course['studentGDrive'] != '' %}
+          {% if course['studentGDrive'] != '' %}
 					  <a href="{{ course['studentGDrive'] }}" target="_blank" rel="noopener noreferrer">
 						<button type="button" class="btn btn-danger"><i class="fas fa-hdd"></i> Student Drive</button>
 					  </a>
 				  {% endif %}
                 </div>
               </div>
-  
+
             </div>
 			{% for instructor in course['instructors'] %}
             <div class="col">
-  
+
               <div class="card my-2">
                 <div class="card-header"><i class="fas fa-address-card"></i>
                   Instructor
@@ -60,33 +65,33 @@
 				  {% if instructor['email'] != '' %}
                   <p><i class="fas fa-envelope"></i> {{ instructor['email'] }} </p>
                   {% endif %}
-				  
+
 				  {% if instructor['website'] != "" %}
 				  <a href="{{ instructor['website'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-primary"><i class="fas fa-user-circle"></i> Site</button>
                   </a>
 				  {% endif %}
-				  
+
 				  {% if instructor['email'] != '' %}
                   <a href="mailto:{{ instructor['email'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-info"><i class="fas fa-paper-plane"></i> Mail</button>
                   </a>
 				  {% endif %}
-  
+
                   <a href="mailto:{{ course['email'] }}" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="btn btn-info"><i class="fas fa-envelope"></i> {{ course['idname'] }} Mail</button>
                   </a>
-  
+
                 </div>
               </div>
-  
+
             </div>
 			{% endfor %}
-  
-            
+
+
           </div>
         </div>
-		
+
 		{# This entire block is commented out
 			{% if course["addResource"] %}
 			{% for res in course["addResources"] %}

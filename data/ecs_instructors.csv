@@ -1,12 +1,12 @@
-iiserid,name,courseid,email,website
-127,Shyam S Rai,ecs324,shyamsrai@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/127
-150,Argha Banerjee,ecs334,argha@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/150
-158,Neena Joseph Mani,ecs312,neena@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/158
-172,Suhas Ettammal,ecs310,suhas@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/172
-175,Shreyas Managave,ecs336,shreyas@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/175
-176,Sudipta Sarkar,ecs333,sudipta@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/176
-176,Sudipta Sarkar,ecs458,sudipta@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/176
-200,Joy Merwin Monteiro,ecs323,joy@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/200
-1004,Soumyajit Mukherjee,ecs458,soumyajitm@gmail.com,https://www.geos.iitb.ac.in/sm/
-1005,Ramesh Vellore,ecs312,rameshv@tropmet.res.in,https://www.tropmet.res.in/94-Ramesh%20K.%20Vellore-scientist_detail
-1006,Durga Prasanna Mohanty,ecs336,durgaiitb@gmail.com,https://research.unipune.ac.in/User/User/Teacher_JournalList?TeacherId=2586688F-AE1C-486D-903B-C14B88FC8387
+,iiserid,name,courseid,email,website
+0,127,Shyam S Rai,ecs324,shyamsrai@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/127
+1,150,Argha Banerjee,ecs334,argha@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/150
+2,158,Neena Joseph Mani,ecs312,neena@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/158
+3,172,Suhas Ettammal,ecs310,suhas@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/172
+4,175,Shreyas Managave,ecs336,shreyas@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/175
+5,176,Sudipta Sarkar,ecs333,sudipta@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/176
+6,176,Sudipta Sarkar,ecs458,sudipta@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/176
+7,200,Joy Merwin Monteiro,ecs323,joy@iiserpune.ac.in,https://www.iiserpune.ac.in/people/faculty-details/200
+8,1004,Soumyajit Mukherjee,ecs458,soumyajitm@gmail.com,https://www.geos.iitb.ac.in/sm/
+9,1005,Ramesh Vellore,ecs312,rameshv@tropmet.res.in,https://www.tropmet.res.in/94-Ramesh%20K.%20Vellore-scientist_detail
+10,1006,Durga Prasanna Mohanty,ecs336,durgaiitb@gmail.com,https://research.unipune.ac.in/User/User/Teacher_JournalList?TeacherId=2586688F-AE1C-486D-903B-C14B88FC8387
