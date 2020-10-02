@@ -25,6 +25,6 @@ for i,worksheet in enumerate(worksheet_list):
     df_temp = pd.DataFrame(worksheet.get_all_records())
     
     if i%2==0:
-        df.to_csv(os.path.join("data",subjects[i//2]+"_"+header[0]+".csv"))
+        df_temp.to_csv(os.path.join("data",subjects[i//2]+"_"+header[0]+".csv"))
     else:
-        df.to_csv(os.path.join("data",subjects[i//2]+"_"+header[0]+".csv"))
+        df_temp.to_csv(os.path.join("data",subjects[i//2]+"_"+header[1]+".csv"))
