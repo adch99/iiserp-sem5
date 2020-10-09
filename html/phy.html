@@ -940,6 +940,7 @@
       function changeIndex(newIndex) {
         let re = new RegExp(newIndex);
         $("body").html($("body").html().replace(/\/\d+\//g, re));
+        $("body").html($("body").html().replace(/\?authuser=\d+/g, "?authuser=" + newIndex));
 
         currentIndex = $("#currentMI").html();
         $("#mailIndex" + currentIndex).toggleClass("active");
